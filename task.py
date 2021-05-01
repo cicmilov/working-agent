@@ -365,29 +365,24 @@ class Solution3:
 
 
 if __name__ == '__main__':
-    a = [1, 0, 0, 1, 1, 0, 0, 1]
     offs = [5, 6]
 
     start = dt.datetime.now()
-    # g = build_graph(pow(2, 5), offs=offs, pos=pos)
     s = Solution3(35, 5, 1, 2, 1, offs)
     print(s.genetic_algorithm())
     finish = dt.datetime.now()
-    # print(g.BFS(0))
     print(finish - start)
-    exit()
     offs = [2, 5]
 
     start = dt.datetime.now()
 
-    # *************************************************************
-    days = 28
+    print("*************************************************************")
+    days = 14
 
     s2 = Solution2(days, 5, 1, 3, 2, offs)
 
     print(s2.solution())
     finish = dt.datetime.now()
-    # print(g.BFS(0))
     print(finish - start)
 
     print("********************************************************")
@@ -395,6 +390,5 @@ if __name__ == '__main__':
     s = Solution(days, 5, 1, 3, 2, offs)
     print(s.solution())
     finish = dt.datetime.now()
-    # print(g.BFS(0))
     print(finish - start)
     print("********************************************************")
